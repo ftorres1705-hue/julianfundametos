@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>PhoneMash</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>📱 PhoneMash</h1>
+<p>Comparación A/B para crear rankings de smartphones.</p>
+
+<div class="container">
+
+<!-- CONFIGURA -->
+
+<div class="card">
+
+<h2>1) Configura</h2>
+
+<label>Tipo de usuario</label>
+<select id="listener">
+<option value="casual">Usuario casual</option>
+<option value="gamer">Gamer</option>
+<option value="pro">Usuario avanzado</option>
+</select>
+
+<label>Contexto de comparación</label>
+<select id="context">
+<option>¿Cuál tiene mejor cámara?</option>
+<option>¿Cuál tiene mejor rendimiento?</option>
+<option>¿Cuál tiene mejor batería?</option>
+<option>¿Cuál tiene mejor diseño?</option>
+<option>¿Cuál es mejor por su precio?</option>
+</select>
+
+<button onclick="newBattle()">Nuevo duelo</button>
+<button onclick="resetVotes()">Reiniciar</button>
+
+<p style="opacity:0.6;margin-top:15px;">
+El ranking cambia según el tipo de usuario y el criterio.
+</p>
+
+</div>
+
+<!-- ELIGE -->
+
+<div class="card">
+
+<h2>2) Elige</h2>
+
+<p id="question">¿Cuál smartphone es mejor?</p>
+
+<div class="duel">
+
+<div id="optionA" class="song" onclick="vote(0)"></div>
+
+<div class="vs">VS</div>
+
+<div id="optionB" class="song" onclick="vote(1)"></div>
+
+</div>
+
+<div style="margin-top:20px;">
+<button onclick="showTop()">Ver Top 10</button>
+<button onclick="exportVotes()">Exportar CSV</button>
+</div>
+
+</div>
+
+<!-- RANKING -->
+
+<div class="card">
+
+<h2>3) Ranking (Top 10)</h2>
+
+<div id="rankingList"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
