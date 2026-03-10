@@ -1,0 +1,87 @@
+body{
+background:#0b0b0c;
+color:white;
+font-family: system-ui, Arial;
+margin:0;
+padding:40px;
+}
+
+h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.container{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+border:1px solid #222;
+}
+
+select{
+width:100%;
+padding:10px;
+margin-top:6px;
+margin-bottom:15px;
+background:#1b1b1b;
+border:none;
+color:white;
+border-radius:8px;
+}
+
+button{
+padding:10px 14px;
+margin:5px;
+border-radius:8px;
+border:none;
+background:#222;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#3aa0ff;
+}
+
+.duel{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
+margin-top:15px;
+}
+
+.song{
+flex:1;
+padding:18px;
+background:#1a1a1a;
+border-radius:10px;
+text-align:center;
+cursor:pointer;
+border:1px solid #333;
+}
+
+.song:hover{
+background:#3aa0ff;
+}
+
+.vs{
+font-weight:bold;
+opacity:0.6;
+}
+
+.rankItem{
+display:flex;
+justify-content:space-between;
+padding:8px;
+border-bottom:1px solid #222;
+font-size:14px;
+}
